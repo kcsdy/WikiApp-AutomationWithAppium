@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-14T21:50:42 GMT" name="Sample Test Suite" finished-at="2025-01-14T21:52:06 GMT" duration-ms="83666">
+    <groups>
+    </groups>
+    <test started-at="2025-01-14T21:50:42 GMT" name="Verify Onboarding flow" finished-at="2025-01-14T21:50:56 GMT" duration-ms="13764">
+      <class name="testcases.VerifyOnboardingFlow">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.VerifyOnboardingFlow@3e27ba32]" started-at="2025-01-14T21:50:42 GMT" name="setup" finished-at="2025-01-14T21:50:52 GMT" duration-ms="9280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyOnboardingFlow()[pri:0, instance:testcases.VerifyOnboardingFlow@3e27ba32]" started-at="2025-01-14T21:50:52 GMT" name="verifyOnboardingFlow" finished-at="2025-01-14T21:50:56 GMT" duration-ms="3814" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[The element 'By.id: org.wikipedia:id/primaryTextView' is not linked to the same object in DOM anymore
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [55f43dc1-f4eb-4f76-a83a-c3e4ec3b7b4f, getElementText {id=00000000-0000-0079-ffff-ffff000000c0}]
+Capabilities {appium:appActivity: org.wikipedia.DefaultIcon, appium:appPackage: org.wikipedia, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\ASUS\Downloads\chr..., appium:databaseEnabled: false, appium:desired: {appActivity: org.wikipedia.DefaultIcon, appPackage: org.wikipedia, automationName: UIAutomator2, chromedriverExecutable: C:\Users\ASUS\Downloads\chr..., deviceName: KuntalPhone, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2424, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 15, appium:statBarHeight: 137, appium:takesScreenshot: true, appium:viewportRect: {height: 2287, left: 0, top: 137, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Element: [[AndroidDriver:  on ANDROID (55f43dc1-f4eb-4f76-a83a-c3e4ec3b7b4f)] -> id: org.wikipedia:id/primaryTextView]
+Session ID: 55f43dc1-f4eb-4f76-a83a-c3e4ec3b7b4f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: The element 'By.id: org.wikipedia:id/primaryTextView' is not linked to the same object in DOM anymore
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [55f43dc1-f4eb-4f76-a83a-c3e4ec3b7b4f, getElementText {id=00000000-0000-0079-ffff-ffff000000c0}]
+Capabilities {appium:appActivity: org.wikipedia.DefaultIcon, appium:appPackage: org.wikipedia, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\ASUS\Downloads\chr..., appium:databaseEnabled: false, appium:desired: {appActivity: org.wikipedia.DefaultIcon, appPackage: org.wikipedia, automationName: UIAutomator2, chromedriverExecutable: C:\Users\ASUS\Downloads\chr..., deviceName: KuntalPhone, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2424, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 15, appium:statBarHeight: 137, appium:takesScreenshot: true, appium:viewportRect: {height: 2287, left: 0, top: 137, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Element: [[AndroidDriver:  on ANDROID (55f43dc1-f4eb-4f76-a83a-c3e4ec3b7b4f)] -> id: org.wikipedia:id/primaryTextView]
+Session ID: 55f43dc1-f4eb-4f76-a83a-c3e4ec3b7b4f
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+at PageObjects.OnboardingPage.verifyOnboardingPageText(OnboardingPage.java:37)
+at testcases.VerifyOnboardingFlow.verifyOnboardingFlow(VerifyOnboardingFlow.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOnboardingFlow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.VerifyOnboardingFlow@3e27ba32]" started-at="2025-01-14T21:50:56 GMT" name="tearDown" finished-at="2025-01-14T21:50:56 GMT" duration-ms="600" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.VerifyOnboardingFlow -->
+    </test> <!-- Verify Onboarding flow -->
+    <test started-at="2025-01-14T21:50:56 GMT" name="Edit or Add new language" finished-at="2025-01-14T21:51:17 GMT" duration-ms="20484">
+      <class name="testcases.AddingNewLanguageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.AddingNewLanguageTest@710c2b53]" started-at="2025-01-14T21:50:56 GMT" name="setup" finished-at="2025-01-14T21:51:05 GMT" duration-ms="8124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="addingNewLanguageTest()[pri:0, instance:testcases.AddingNewLanguageTest@710c2b53]" started-at="2025-01-14T21:51:05 GMT" name="addingNewLanguageTest" finished-at="2025-01-14T21:51:16 GMT" duration-ms="11779" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addingNewLanguageTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.AddingNewLanguageTest@710c2b53]" started-at="2025-01-14T21:51:16 GMT" name="tearDown" finished-at="2025-01-14T21:51:17 GMT" duration-ms="578" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.AddingNewLanguageTest -->
+    </test> <!-- Edit or Add new language -->
+    <test started-at="2025-01-14T21:51:17 GMT" name="Search Functionality" finished-at="2025-01-14T21:51:48 GMT" duration-ms="31473">
+      <class name="testcases.SearchFunctionalityTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.SearchFunctionalityTest@1caa0244]" started-at="2025-01-14T21:51:17 GMT" name="setup" finished-at="2025-01-14T21:51:25 GMT" duration-ms="8174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="searchfunctionalityTest()[pri:0, instance:testcases.SearchFunctionalityTest@1caa0244]" started-at="2025-01-14T21:51:25 GMT" name="searchfunctionalityTest" finished-at="2025-01-14T21:51:47 GMT" duration-ms="22413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchfunctionalityTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SearchFunctionalityTest@1caa0244]" started-at="2025-01-14T21:51:47 GMT" name="tearDown" finished-at="2025-01-14T21:51:48 GMT" duration-ms="881" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.SearchFunctionalityTest -->
+    </test> <!-- Search Functionality -->
+    <test started-at="2025-01-14T21:51:48 GMT" name="Verify behavior when searching for a non-existent query" finished-at="2025-01-14T21:52:06 GMT" duration-ms="17753">
+      <class name="testcases.SearchingforanonexistentqueryTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.SearchingforanonexistentqueryTest@6e9a5ed8]" started-at="2025-01-14T21:51:48 GMT" name="setup" finished-at="2025-01-14T21:51:57 GMT" duration-ms="8319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="searchfornonexistquery()[pri:0, instance:testcases.SearchingforanonexistentqueryTest@6e9a5ed8]" started-at="2025-01-14T21:51:57 GMT" name="searchfornonexistquery" finished-at="2025-01-14T21:52:06 GMT" duration-ms="8912" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchfornonexistquery -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SearchingforanonexistentqueryTest@6e9a5ed8]" started-at="2025-01-14T21:52:06 GMT" name="tearDown" finished-at="2025-01-14T21:52:06 GMT" duration-ms="518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.SearchingforanonexistentqueryTest -->
+    </test> <!-- Verify behavior when searching for a non-existent query -->
+  </suite> <!-- Sample Test Suite -->
+</testng-results>

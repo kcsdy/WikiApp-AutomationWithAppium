@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sample Test Suite" parallel="false">
+
+
+	<test name="Verify Onboarding flow">
+		<!-- Add test classes -->
+		<classes>
+			<class name="testcases.VerifyOnboardingFlow" />
+		</classes>
+	</test>
+
+	<test name="Edit or Add new language">
+		<!-- Add test classes -->
+		<classes>
+			<class name="testcases.AddingNewLanguageTest" />
+		</classes>
+	</test>
+	<!-- Define a test -->
+	<test name="Search Functionality">
+		<!-- Add test classes -->
+		<classes>
+			<class name="testcases.SearchFunctionalityTest" />
+		</classes>
+	</test>
+	<test name="Verify behavior when searching for a non-existent query">
+		<!-- Add test classes -->
+		<classes>
+			<class name="testcases.SearchingforanonexistentqueryTest" />
+		</classes>
+	</test>
+
+
+</suite>

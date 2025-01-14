@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Sample Test Suite</th></tr>
+<tr><td><a href="#t0">Verify Onboarding flow</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">13,764</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Edit or Add new language</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">20,484</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Search Functionality</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">31,473</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">Verify behavior when searching for a non-existent query</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">17,753</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">83,474</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Sample Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Verify Onboarding flow &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.VerifyOnboardingFlow</td><td><a href="#m0">verifyOnboardingFlow</a></td><td rowspan="1">1736891452274</td><td rowspan="1">3814</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Edit or Add new language &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.AddingNewLanguageTest</td><td><a href="#m1">addingNewLanguageTest</a></td><td rowspan="1">1736891465007</td><td rowspan="1">11779</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Search Functionality &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.SearchFunctionalityTest</td><td><a href="#m2">searchfunctionalityTest</a></td><td rowspan="1">1736891485550</td><td rowspan="1">22413</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">Verify behavior when searching for a non-existent query &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.SearchingforanonexistentqueryTest</td><td><a href="#m3">searchfornonexistquery</a></td><td rowspan="1">1736891517173</td><td rowspan="1">8912</td></tr></tbody>
+</table>
+<h2>Verify Onboarding flow</h2><h3 id="m0">testcases.VerifyOnboardingFlow#verifyOnboardingFlow</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: The element &apos;By.id: org.wikipedia:id/primaryTextView&apos; is not linked to the same object in DOM anymore
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [55f43dc1-f4eb-4f76-a83a-c3e4ec3b7b4f, getElementText {id=00000000-0000-0079-ffff-ffff000000c0}]
+Capabilities {appium:appActivity: org.wikipedia.DefaultIcon, appium:appPackage: org.wikipedia, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\ASUS\Downloads\chr..., appium:databaseEnabled: false, appium:desired: {appActivity: org.wikipedia.DefaultIcon, appPackage: org.wikipedia, automationName: UIAutomator2, chromedriverExecutable: C:\Users\ASUS\Downloads\chr..., deviceName: KuntalPhone, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2424, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 15, appium:statBarHeight: 137, appium:takesScreenshot: true, appium:viewportRect: {height: 2287, left: 0, top: 137, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Element: [[AndroidDriver:  on ANDROID (55f43dc1-f4eb-4f76-a83a-c3e4ec3b7b4f)] -&gt; id: org.wikipedia:id/primaryTextView]
+Session ID: 55f43dc1-f4eb-4f76-a83a-c3e4ec3b7b4f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+	at PageObjects.OnboardingPage.verifyOnboardingPageText(OnboardingPage.java:37)
+	at testcases.VerifyOnboardingFlow.verifyOnboardingFlow(VerifyOnboardingFlow.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Edit or Add new language</h2><h3 id="m1">testcases.AddingNewLanguageTest#addingNewLanguageTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Search Functionality</h2><h3 id="m2">testcases.SearchFunctionalityTest#searchfunctionalityTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Verify behavior when searching for a non-existent query</h2><h3 id="m3">testcases.SearchingforanonexistentqueryTest#searchfornonexistquery</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
